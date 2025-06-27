@@ -30,3 +30,7 @@ CREATE DATABASE IF NOT EXISTS Order_Details (
     book_id (Foreign Key referencing Books table),
     quantity DOUBLE
 )
+
+CREATE DATABASE IF NOT EXISTS alx_book_store (
+    id INT PRIMARY KEY
+)
