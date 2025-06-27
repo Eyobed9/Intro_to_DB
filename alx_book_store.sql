@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS Orders (
 CREATE TABLE IF NOT EXISTS Order_Details (
     order detailid INT PRIMARY KEY,
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
-    book_id (Foreign Key referencing Books table),
+    FOREIGN KEY (book_id) REFERENCES Books(book_id),
     quantity DOUBLE
 )
 
