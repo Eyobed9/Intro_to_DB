@@ -1,2 +1,9 @@
-USE alx_book_store.sql;
-SHOW COLUMNS in Books;
+SELECT 
+  COLUMN_NAME,
+  COLUMN_TYPE,
+  COLUMN_KEY
+FROM 
+INFORMATION_SCHEMA.COLUMNS
+WHERE   
+TABLE_SCHEMA = 'alx_book_store' AND
+TABLE_NAME = 'Books'
